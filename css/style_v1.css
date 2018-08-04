@@ -1,0 +1,1366 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* ----------------- Common Settings ----------------- */
+
+@font-face {
+    font-family: 'unimanbold';
+    src: url('../fonts/uniman_bold.woff2') format('woff2'),
+         url('../fonts/uniman_bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+body
+{	font-family: 'Open Sans', sans-serif;	
+	 font-size: 100%;
+    -webkit-text-size-adjust: 100%;  
+    font-variant-ligatures: none;
+    -webkit-font-variant-ligatures: none;    
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+				overflow-x: hidden;
+}
+
+a
+{	
+	border: 0;
+	outline: none;
+	text-decoration: none;
+	transition: color 0.3s linear;
+ -webkit-transition: color 0.3s linear;
+ -moz-transition: color 0.3s linear;		
+}
+
+a:focus, a:hover
+{	
+	border: 0;
+	outline: none;
+	text-decoration: none;
+}
+
+
+input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea{
+	font-size: 14px;
+	font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;  
+  padding: 0;
+}
+
+input, select
+{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+}
+
+p {
+    margin-top: 0;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+
+a.button
+{
+	font-family: "Montserrat", sans-serif;
+	background: #1f87e4;
+	border: 0;
+	display: inline-block;
+	outline: none;
+	padding: 5px 20px 5px 20px;
+	color: #fff !important;
+	font-size: 18px;
+	min-width: 200px;	
+	border-radius: 100px;
+	margin-right: 20px;
+	margin-top: 20px;
+	cursor: pointer;
+	text-align: center;
+	transition: background 2.1s linear;
+ -webkit-transition: background 2.1s linear;
+ -moz-transition: background 2.1s linear;	
+	
+}
+
+a.button:hover
+{
+	background: #2d3743;
+	color: #fff;
+}
+
+table
+{font-size: 14px;
+	margin:  50px 0 50px 0px;
+}
+
+ul,li
+{	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+::selection
+{
+	background: #fff;
+	color: #29323c;
+}
+
+img
+{max-width: 100%;
+height: auto;
+border: 0;
+}
+
+a[href^="mailto:"] {
+  color: #29323c;
+}
+
+a[href^="mailto:"]:hover {
+  color: #1f87e4;
+}
+
+
+
+/* ---------------Main Navigation and Sub Navigation Start here--------------- */
+
+.navbar
+{
+	padding: 0;
+}
+
+
+.navbar-toggler
+{
+	outline: none;
+	border: none;
+	background: #162d42;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 0;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.navbar-toggler:focus
+{
+	outline: none;
+	border: none;
+}
+.color-white
+{
+	color: #fff;
+	-webkit-transition: all .3s linear 0s;
+  transition: all .3s linear 0s;
+}
+
+.color-blue
+{
+	color: #dae8f7;
+}
+
+
+.navbar-main .navbar-toggler
+{
+	top: 20px;
+}
+
+
+
+.topheader
+{
+	background: #2d3743;
+	font-size: 12px;
+	color: #fff;
+	padding: 0px;
+}
+
+.topheader .emLogin-top
+{
+	top:0px;
+}
+
+
+
+.topheader .navbar-text
+{
+	
+	color: #fff;
+}
+
+
+.navbar-brand
+{
+	color: #fff;
+
+}
+
+#mainnav li a:hover
+{
+	color: #c4e0fd;
+
+}
+
+#topbar li a:hover
+{
+	color: #577eaa;
+}
+
+.navbar-main
+{background: rgb(92, 171, 255);
+	color: #fff;
+}
+
+.navbar-main ul a 
+{
+	font-size: 14px;	
+	font-weight: bold;	
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.navbar-main ul li
+{
+	margin-right: 50px;
+}
+
+.navbar-main ul li:last-child
+{
+	margin-right: 0px;
+}
+
+.pad
+{
+	margin-right:36px;
+}
+
+a.emLogin
+{
+	width: 250px;
+	height: 50px;
+	line-height: 50px;
+	background: rgb(92, 171, 255) !important;
+	text-align: center;
+	border: 0;
+	display: inline-block;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	color: #fff !important;
+	font-size: 14px;
+	font-weight:bold;
+	cursor: pointer;		
+	transition: background 0.3s linear;
+ -webkit-transition: background 0.3s linear;
+ -moz-transition: background 0.3s linear;	
+}
+
+
+a.emLogin:hover
+{	
+	background: #577eaa !important;
+	color: #fff !important;
+}
+
+
+a.emLogin-mobile
+{
+	display: none;
+	background: #1f87e4;
+	border: 0;	
+	outline: none;
+	padding: 0px 20px 5px 20px;
+	color: #fff;
+	font-size: 14px;
+ position: absolute;
+	top:10px;
+	left:5px;
+	bottom: 5px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 100px;
+	cursor: pointer;
+	text-align: center;
+	transition: background 0.3s linear;
+ -webkit-transition: background 0.3s linear;
+ -moz-transition: background 0.3s linear;	
+}
+
+a.emLogin-mobile:hover
+{
+	background: #fff;
+	color: #29323c;
+}
+
+
+.mtop	
+{position: relative;
+top:8px;
+}
+
+
+.fa.fa-navicon {
+  color:white;
+}
+
+
+.topsocialicons p
+{
+	margin-right:10px;
+}
+
+
+
+
+/*------------------ Home Page Slider ------------------ */
+
+
+#home .fullwidth-carousel
+{
+	max-height: 500px;
+	display: flex;
+	align-items: center;
+ justify-content: center;	
+}
+
+#home .fullwidth-carousel .details {   
+    height: 80%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			
+}
+
+#home .fullwidth-carousel .details h5 {   
+    margin-top: 48px;   
+}
+
+
+.slide1 span
+{
+	font-family: 'unimanbold';
+	text-transform: none;
+	color: #001499;
+	font-size: 60px;
+	font-weight: bold;	
+	text-align: center;
+	letter-spacing: 7px;
+	line-height: 60px;	
+	text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.75);
+}
+
+.slide1 span span
+{
+	color: #FD0004;
+}
+
+
+/* --------------------- All Sections -------------------- */
+
+.bgOdd
+{
+background: #dae8f7;
+}
+
+.bgEven
+{
+	background: #b7cfec;
+}
+
+.bgDark
+{
+	background: #29323c;
+}
+
+.sectionAll
+{
+	padding: 40px 0 40px 0px;
+	color: #29323c;
+	position: relative;	
+}
+
+.sectionAll p
+{
+	font-size: 14px;
+	color: #29323c;
+}
+
+
+.section-title
+{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.section-title h3
+{
+	font-size: 26px;
+	color: #29323c;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+}
+
+.section-title h6
+{
+	font-size: 14px;
+	color: #29323c;
+}
+
+.section-title hr
+{
+	width: 3%;
+	text-align: center;
+	background: #29323c;
+	height: 1px;	
+	margin: 0 auto;
+}
+
+
+
+/* ----------------- Page Sections ------------------  */
+
+section[data-name='aboutus'] {
+  text-align: center;
+}
+
+section[data-name='projects'] ul {
+  text-align: left;
+	 list-style: none;
+	 width: 70%;
+		position: relative;	
+}
+
+section[data-name='projects'] ul li:first-child {
+ margin-bottom: 10px;	
+}
+
+section[data-name='projects'] ul h3 {
+ font-size: 22px;
+	color: #43648d;
+	margin-bottom: 20px;	
+}
+
+
+section[data-name='aboutus'] h1 {
+  font-size: 36px;	
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-weight:400;
+}
+
+
+section[data-name='careers'] h2 
+{
+	  font-size: 36px;
+	font-weight: 300;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+#section-careers h2
+{
+	font-weight:400;
+}
+
+
+.aboutus-buttons
+{
+	padding-top: 30px;
+	padding-bottom: 0px;
+}
+
+
+.project-image
+{ position: absolute;
+	 right:0;
+	top:150px;
+}
+
+
+
+/* Section Contact us */
+
+.contactBox
+{background: #dae8f7;
+	padding-top: 42px;
+	padding-left: 46px;
+	padding-bottom: 30px;
+	min-height: 367px;
+	border: solid 3px #fff;	
+}
+
+.contactBox h5
+{font-size: 24px;
+	margin-bottom: 38px;	
+}
+
+.contactBox h6
+{font-size: 14px;
+	margin-bottom: 20px;
+	font-weight: 700;
+}
+
+.contactBox p
+{
+	margin-bottom: 40px;	
+}
+
+
+.contactBox ul
+{ margin: 0;
+	padding: 0;
+	list-style: none;	
+}
+
+.contactBox ul li
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+	clear: both;
+	margin-bottom: 30px;	
+}
+
+
+.icon-phone
+{ background: url(../images/icons/telephone.svg) no-repeat center center;
+	background-size: 100% 100%;
+	width: 26px;
+	height: 26px;
+	display: block;
+	margin: 0 auto;
+}
+
+
+.icon-fax
+{ background: url(../images/icons/fax.svg) no-repeat center center;
+	background-size: 100% 100%;
+	width: 26px;
+	height: 26px;
+	display: block;
+	margin: 0 auto;
+}
+
+.icon-email
+{ background: url(../images/icons/envelope.svg) center center;
+	background-size: 100% 100%;
+	width: 26px;
+	height: 26px;
+	display: block;
+	margin: 0 auto;
+}
+
+
+.contact-us-map
+{
+	width: 100%;	
+}
+
+.box-top
+{
+	height: 47px;
+	width: 65%;
+	background: #1f87e4;
+	position: relative;
+	top:20px;
+	z-index: 10;
+	margin: auto;
+	font-size: 18px;	
+	line-height: 47px;
+	color: #fff;
+	text-align: center;
+	border-radius: 100px;
+	font-family: "Montserrat", sans-serif;
+}
+
+
+
+.contact-us-map .box
+{
+	height: 320px;
+	background: #fff;
+	position: relative;
+	z-index: 8;
+	padding: 75px 36px 0 36px;
+}
+
+
+.contact-us-map h4
+{margin-top: 70px;
+	margin-bottom: 40px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+
+.contact-us-map h6
+{margin-bottom: 20px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+
+.contact-us-map p
+{margin-bottom: 10px;
+}
+
+.contact-us-map ul {
+	 width:100%;
+	 list-style: none;
+	margin-top: 40px;
+	}
+
+.contact-us-map ul li
+{		
+	display: block;
+	margin-bottom: 20px;
+}
+
+.contact-us-map ul li i
+{		
+	margin-right: 20px;
+	display: inline-block;
+	font-size: 22px;
+	position: relative;
+	top:2px;
+	width: 22px;
+}
+
+.contact-us-map ul li span
+{		
+	margin-right: 20px;
+	display: inline-block;
+	font-size: 14px;
+}
+
+
+#map-pune
+{background: url(../images/map1.jpg) no-repeat center center;
+	width: 100%;
+	background-size: cover;
+	border: rgba(31,135,228,0.1) solid 5px;
+	background-clip: padding-box;
+	
+}
+
+#map-telangana
+{background: url(../images/map2.jpg) no-repeat center center;
+	width: 100%;
+	background-size: cover;
+		border: rgba(31,135,228,0.1) solid 5px;
+	background-clip: padding-box;
+}
+
+#map-telangana a
+{ color: inherit;
+}
+
+
+
+
+/*----------------------- Section Footer --------------------- */
+
+
+#section-footer
+{
+	background: url(../images/bg_footer.jpg) no-repeat center center #4d6f95;
+	background-size: cover;
+	color: #fff;
+	padding: 30px 0 10px 0px;
+}
+
+
+
+#section-footer p, #section-footer a
+{	
+	color: #fff;
+	font-size: 13px;
+}
+
+#section-footer a:hover
+{	
+	color: #b7cfec;
+}
+
+#section-footer h6
+{	
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 30px;
+	font-weight: 700;
+}
+
+#section-footer h5
+{	
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+
+
+#section-footer  li {
+	display:block; 	
+}
+
+#section-footer .media i
+{
+	font-size: 20px;
+	position: relative;
+	top:2px;
+	width: 20px;
+	height: 20px;	
+	margin-right: 20px;
+	display: block;
+	text-align: center;
+}
+
+
+
+#section-footer  li div {
+	display:inline-block;
+	margin-left: 20px;
+}
+
+
+.second-col li div p
+{
+	display: block;
+}
+
+
+.footer-links ul 
+{
+	
+	margin: 0 auto;
+	width: 620px;
+	margin-top: 20px;
+}
+
+.footer-links ul li
+{	
+	float: left;
+	margin-right: 40px;	
+}
+
+.footer-links ul li a
+{	
+	font-size: 16px !important;	
+}
+
+
+.footer-links p
+{		
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+
+/* Footer Select Menu */
+
+.select-menu
+{
+	display: none;
+	font-size: 14px;
+	color: #2d3743;	
+}
+
+.select-menu select
+{
+	background: #fff;
+	width: 100%;
+	font-size: 14px;
+	color: #2d3743;	
+}
+
+.select-menu h6
+{
+	margin-bottom: 10px !important;
+	font-size: 16px !important;
+	font-weight: normal !important;
+}
+
+
+/* Fixed positioned Scroll-top */
+
+a.scroll-top
+{
+	
+	width: 80px;
+	height: 80px;
+	line-height: 35px;	
+	color: #fff !important;
+	position: relative;	
+	margin: 0 auto;
+	text-align: center;
+}
+
+a.scroll-top i
+{
+	color: #fff;
+	font-size: 24px;
+	position: relative;
+	top:10px;
+}
+
+a.scroll-top p
+{
+	line-height: normal !important;
+	color: #fff !important;
+}
+
+
+#map{
+  display: block;
+  width: 100%;
+  height: 215px;
+		background: url(../images/map_bg.jpg) no-repeat center center;
+		background-size: cover;
+	 overflow: hidden;
+		border: solid 3px #fff;
+}
+
+.section-top
+{
+	position: fixed;
+	right: 17px;
+	bottom: 13px;
+	padding: 2px;
+	background: rgba(255,255,255,.8);
+	width: 60px;
+	height: 60px;	
+	text-align: center;
+	font-size: 13px;
+	color: #2d3743;
+	z-index: 9999;
+	display: none;
+}
+
+
+.ourmission ul { padding-left:20px; list-style:none; }
+.ourmission ul li { margin-bottom:10px; }
+.ourmission ul li:before {    
+    font-family: 'FontAwesome';
+    content: '\f061';
+    margin:0 5px 0 -15px;
+}
+
+
+
+.ourmission h5
+{ 
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: 700;
+}
+
+
+
+/* Modal Windows on home page */
+
+.remodal a.button, .remodal a.button:hover
+{
+	color: #fff;
+}
+
+
+
+
+
+/* Employee Login Page */
+
+#page-inside .fullwidth-carousel {
+  height: 160px;
+  display: block;
+  overflow: hidden;
+ }
+
+	
+#page-inside .fullwidth-carousel .item
+{ background: #2d3743;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 160px;
+	color: #fff;
+}
+
+
+footer .fa-envelope
+{font-size: 14px;}
+
+#section-footer li i.fa-envelope {   
+    font-size: 19px;
+  
+}
+
+
+.Gitsform
+{
+	background: #fff;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+
+.Gitsform .input-group-text {
+
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #1f87e4;
+    border: 1px solid #1f87e4;
+    border-radius: .25rem;			
+				display: table-cell;
+				vertical-align: top;
+}
+
+input[type=button], input[type=submit], input[type=reset]
+{
+	background: #1f87e4;
+	border: 0;
+	display: inline-block;
+	outline: none;
+	padding: 5px 10px 5px 10px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: normal;
+	min-width: 200px;	
+	border-radius: 100px;
+	margin-right: 20px;
+	margin-top: 20px;
+	cursor: pointer;
+	text-align: center;
+	transition: background 0.3s linear;
+ -webkit-transition: background 0.3s linear;
+ -moz-transition: background 0.3s linear;	
+	 font-family: "Montserrat", sans-serif;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover
+{
+	background: #2d3743;
+	color: #fff;
+}
+
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #b7cfec;
+}
+
+
+.margin-top
+{
+	margin-top: 70px;
+}
+
+.form-gits .button	
+{min-width: 120px !important;}
+
+
+#page-inside #section-aboutus a
+{
+	color: #29323c;
+}
+
+
+
+#page-inside #section-aboutus a
+{
+	color: #29323c;
+}
+
+#page-inside #section-aboutus h6
+{
+	color: #29323c;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;	
+}
+
+
+.jobpost
+{
+	background: #fff;
+}
+
+.jobpost .margin-top
+{
+	margin-top: 40px;	
+}
+
+.jobpost .margin-top h3
+{
+	font-size: 20px;	
+}
+
+.jobdes
+{	
+	background: #fff;
+	height: 400px;	
+	display: none;
+	overflow: auto;
+}
+
+.jobpost .section-title
+{
+	margin-bottom: 10px;
+}
+
+
+a.jobdes-close
+{
+float: right;
+margin-right: 10px;
+margin-top: 10px;
+cursor: pointer;
+font-size: 12px;
+	margin-bottom: 5px;
+}
+
+
+a.btn-view
+{
+	font-family: "Montserrat", sans-serif;
+	background: #1f87e4;
+	border: 0;
+	display: inline-block;
+	outline: none;
+	padding: 3px;
+	color: #fff !important;
+	font-size: 13px;
+	min-width: 110px;	
+	border-radius: 100px;	
+	cursor: pointer;
+	text-align: center;
+	transition: background 2.1s linear !important;
+ -webkit-transition: background 2.1s linear !important;
+ -moz-transition: background 2.1s linear !important;		
+}
+
+a.button:hover
+{
+	background: #2d3743 !important;
+	color: #fff !important;
+}
+
+
+.jobdes table
+{
+	margin-top: 0px;
+}
+
+
+a.feedback-btn
+{	
+	background: #1f87e4;
+	border: 0;	
+	outline: none;
+	padding: 0px 10px 3px 10px;
+	color: #fff;
+	font-size: 13px;
+ position: absolute;
+	top:10px;
+	right:5px;
+	bottom: 5px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 100px;
+	cursor: pointer;
+	text-align: center;
+	transition: background 0.3s linear;
+ -webkit-transition: background 0.3s linear;
+ -moz-transition: background 0.3s linear;	
+}
+
+a.feedback-btn:hover
+{
+	background: #fff;
+	color: #29323c;
+}
+
+.modal-header {
+    border-bottom: 0px solid #e9ecef;   
+}
+
+
+#feedback .section-title {
+	margin-bottom: 0px;
+}
+
+
+#feedback textarea {
+	height: 100px;	
+}
+
+#feedback form
+{background: none;}
+
+
+#home .modal-lg {
+   max-width: 70%;			
+}
+
+#home .modal-lg a.button
+{
+	   padding: 5px 10px 5px 10px;
+    color: #fff !important;
+    font-size: 14px;
+    min-width: 100px;
+}
+
+
+.modal-content
+{
+	background: #dae8f7;	
+	padding-top: 20px;
+	border-radius: 20px;
+}
+
+.modal
+{
+	background: rgba(43, 46, 56, 0.9);
+}
+
+
+.modal-header
+{
+	padding: 0;
+}
+
+.modal-header .close {
+    padding: 0;
+    margin: 0;
+				position: absolute;
+				right: 15px;
+				top: 10px;
+				z-index: 9999;
+				font-size: 32px;
+}
+
+
+.form-error {
+    font-size: 13px;
+}
+
+
+table.job td, .table.jobs th {
+	
+	padding: 0.50rem;
+	vertical-align: middle;
+}
+
+.table-wrap
+{
+	padding: 7px;	
+	background: #fff;
+}
+
+.table-wrap table {    
+    margin: 0;
+}
+
+.op-img
+{
+	margin-top: 20px; 
+	text-align: center;
+}
+
+
+
+.fullwidth-carousel .details a.getStarted
+{
+	background: #1f87e4;
+	border: solid 1px #fff;
+}
+
+
+
+
+.job-role
+{
+	background: #fff;
+	padding: 15px;
+	border-radius: 4px;
+	position: relative;
+	margin-bottom: 20px;	
+	font-size: 14px;
+}
+
+.job-details
+{
+		background: #fff;
+	padding: 15px;
+	border-radius: 4px;
+}
+
+
+
+.job, .job-data p
+{
+	font-size: 13px;
+}
+
+.job li
+{
+	margin-bottom: 5px;
+}
+
+
+.closejob
+{
+	display: none;
+	float: right;
+	top:10px;
+	right:15px;
+	color: #000;	
+	padding: 5px;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	border-radius: 100px;
+}
+
+.closejob i
+{
+		font-size: 18px;
+}
+
+
+.job .job-title a
+{
+	font-size: 16px;
+	color: #29323c;
+	font-weight: bold;
+}
+
+.job-title
+{
+		font-size: 16px;
+	color: #29323c;
+	font-weight: bold;
+}
+
+
+.job-details ul li a
+{
+	font-weight: bold;
+}
+
+
+.job-details ul li
+{
+	margin-bottom: 10px;	
+	font-size: 14px;
+}
+
+.job-details li ul li
+{
+list-style: decimal;
+	margin-left: 30px;
+}
+
+
+a.viewjobbtn
+{
+	font-family: "Montserrat", sans-serif;
+	background: #1f87e4;
+	border: 0;
+	margin-top: 0px;
+	display: inline-block;
+	outline: none;
+	padding: 3px;
+	color: #fff !important;
+	font-size: 12px;
+	min-width: 80px;	
+	border-radius: 100px;	
+	cursor: pointer;
+	text-align: center;
+	transition: background 2.1s linear !important;
+ -webkit-transition: background 2.1s linear !important;
+ -moz-transition: background 2.1s linear !important;
+	float: right;
+
+}
+
+a.viewjobbtn:hover
+
+{
+	background: #2d3743 !important;
+	color: #fff !important;
+}
+
+
+.nav {
+    display: inherit;  
+    -ms-flex-wrap: inherit;
+    flex-wrap: inherit;
+    padding-left: inherit;
+    margin-bottom: inherit;
+    list-style: inherit;
+}
+
+
+
+.pagination 
+{
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+
+p.applyjob h6 a
+{
+	
+	font-size: 13px !important;
+}
+
+
+.job-data table
+{
+	margin: 0;
+	
+}
+
+
+.navbar-nav .button
+{
+	   padding: 5px 20px 5px 20px;
+    color: #fff !important;    
+    min-width: 100px;
+				margin-top: 10px;
+				font-size: 12px;
+}
+
+
+#btn-close-modal
+{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background:#fff;
+	border: solid 1px #ccc;
+	border-radius: 0px;
+	position: absolute;
+	top:20px;
+	right: 40px;
+	font-size: 32px;
+	color: #000;
+}

@@ -1,0 +1,769 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+
+/* ------------ Laptop Device :1366px.-------------- */
+
+@media (min-width: 1200px) and (max-width: 1500px) {	
+		
+	img.project-image
+	{width: 30%;
+		top:100px;
+	}
+	
+	section[data-name='projects'] ul {		
+		width: 50%;	
+		text-align: left;
+	}
+	
+	.section-title {   
+   margin-bottom: 20px;
+}
+	
+}
+
+
+@media (max-width: 2000px){
+		.col-pad
+	{
+		padding-bottom: 40px;
+	}
+}
+
+@media (max-width: 1200px){
+	
+	.op-img
+		{
+			margin-top: 0px; 	
+		}
+	
+}
+
+
+
+/*-------------- Normal desktop :992px.--------------- */
+
+
+@media (min-width: 992px) and (max-width: 1200px) {	
+	
+	img.project-image
+	{display:none;
+	}
+	
+	section[data-name='projects'] ul {		
+		width: 100%;	
+		text-align: center;
+	}
+	
+	.section-title {   
+   margin-bottom: 20px;
+}
+	
+	#section-careers 
+	{text-align: center;
+	}	
+	
+	
+	
+}
+
+ 
+/* ------------------- Tablet desktop :768px. ---------------- */
+
+@media (min-width: 768px) and (max-width: 991px) {	
+	
+	
+		.carousel .slides h1 {    
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 10px;
+}
+	
+		.carousel .slides h5 {    
+     font-size: 14px;
+					white-space: normal;
+}
+	
+	
+	.carousel .details h1 span
+{
+	 font-size: 20px;
+    margin-top: 20px;
+    line-height: 10px;
+}
+	
+	.carousel  a.getStarted {   
+    padding: 5px 10px 5px 10px;    
+    font-size: 14px;
+    width: 200px;
+    margin-top: 10px;
+}
+	
+	
+	.emLogin-mobile
+	{display: block !important;
+	}
+	
+	.emLogin
+	{display: none !important;
+	}
+	
+		
+	.topheader
+	{ padding: 26px;}
+	
+	
+	.col-pad
+	{
+		padding-bottom: 40px;
+	}
+	
+
+		.mtop {
+    position: relative;
+    top: 0px;
+}
+		#topbar
+	{margin-top:20px;	
+	}
+	
+	
+	#mainnav li
+	{
+		background: #1f87e4;
+		color: #fff;
+		text-align: center;		
+		width: 90%;
+		border-radius: 100px;
+		border: solid 1px #b7cfec;
+		transition: background 0.3s linear;
+		-webkit-transition: background 0.3s linear;
+		-moz-transition: background 0.3s linear;
+		margin: 0 auto;
+		margin-bottom: 10px;
+		
+	}
+	
+	#mainnav li:hover
+	{
+		background: #2d3743;
+		color: #fff;
+	}
+	
+	.topbarsmall
+	{
+		max-width: 100%;
+	}
+	
+		img.project-image
+	{width: 50%;
+	}
+	
+		img.project-image
+	{display:none;
+	}
+	
+	section[data-name='projects'] ul {		
+		width: 100%;	
+		text-align: center;
+	}
+	
+	.section-title {   
+   margin-bottom: 20px;
+}
+	
+#section-careers img
+	{width: 50%;	
+	}
+	
+	#section-careers 
+	{text-align: center;
+	}	
+	
+		.remodal img
+	{
+		width: 100%;
+		overflow: hidden;
+	}
+	
+	#section-footer p, #section-footer a
+{	
+	color: #fff;
+	font-size: 14px;
+}
+	
+		section[data-name='projects'] ul { 
+    top: 0px;
+}
+	
+	a.feedback-btn 
+	{
+		right: 20px;
+	}
+			a.emLogin-mobile {   
+    padding: 0px 8px 3px 8px;
+    color: #fff;
+    font-size: 13px;
+				
+}
+	
+.carousel-item {
+  height: 40vh;
+  min-height: 160px;
+}
+
+	
+
+}
+
+ 
+/* --------------- small mobile :320px. ---------------- */
+
+@media (max-width: 767px) {	
+	
+	
+	.carousel .slides h1 {    
+    font-size: 14px;
+    margin-top: 0px;
+    line-height: 10px;
+}
+	
+.carousel .details h1 span
+{
+			 font-size: 14px;
+    margin-top: 0px;
+    line-height: 10px;
+}	
+	
+	
+	
+.carousel .slides h5 {    
+     display: none;
+}
+	
+.carousel .details a.getStarted {   
+    padding: 5px 10px 5px 10px;    
+    font-size: 14px;
+    width: 120px;
+    margin-top: 0px;
+}
+	
+	
+.emLogin-mobile
+	{display: block !important;
+	}
+	
+	.emLogin
+	{display: none !important;
+	}
+	
+	
+	.topheader
+	{ padding: 26px;
+	}
+	
+	.mtop {
+  position: relative;
+  top: 0px;
+}
+	
+	#topbar
+	{margin-top:20px;		
+	}
+	
+	
+	#mainnav li
+	{
+		background: #1f87e4;
+		color: #fff;
+		text-align: center;		
+		width: 90%;
+		border-radius: 100px;
+		border: solid 1px #b7cfec;
+		transition: background 0.3s linear;
+		-webkit-transition: background 0.3s linear;
+		-moz-transition: background 0.3s linear;
+		margin: 0 auto;
+		margin-bottom: 10px;
+		
+	}
+	
+	#mainnav li:hover
+	{
+		background: #2d3743;
+		color: #fff;
+	}
+	
+		.topbarsmall
+	{
+		max-width: 100%;
+	}
+	
+		img.project-image
+	{width: 50%;
+	}
+	
+		img.project-image
+	{display:none;
+	}
+	
+	section[data-name='projects'] ul {		
+		width: 100%;	
+		text-align: center;
+	}
+	
+	.section-title {   
+   margin-bottom: 20px;
+}
+	
+#section-careers img
+	{width: 50%;	
+	}
+	
+	#section-careers 
+	{text-align: center;
+	}	
+	
+		.remodal img
+	{
+		width: 100%;
+		overflow: hidden;
+	}
+	
+		.footer-links ul li {
+    font-size: 12px;   
+				display: inline-block !important;
+    margin-right: 20px;
+}
+	
+		.footer-links ul li a {
+    font-size: 12px;    
+    margin-right: 0px;
+}
+		.foot-copy
+	{
+		 font-size: 12px !important;  
+	}
+	
+	.first-col p, .second-col p, .first-col a, .second-col a
+	{
+		font-size: 13px;
+	}
+	
+		.map a
+	{font-size: 12px;}	
+	
+	
+		#section-footer p, #section-footer a
+{	
+	color: #fff;
+	font-size: 13px;
+}
+	
+	
+.contact-us-map .box {   
+    padding: 75px 16px 0 16px;
+}	
+	
+	.contact-us-map ul li span { 
+    font-size: 12px;
+}
+	
+.contact-us-map ul li i {
+    margin-right: 10px;    
+}	
+	
+	
+		.box-top {
+    height: 39px;
+    width: 43%;    
+    font-size: 13px;
+    line-height: 39px;   
+}
+	
+	#page-inside .slider h3
+	{
+		font-size: 18px;
+	}
+	
+	
+.Gitsform .button
+	{
+		min-width: 100px !important;
+		font-size:  14px;
+	}
+	
+	#section-footer .col-sm
+	{
+		margin-bottom: 30px;
+	}
+	
+#section-footer .media p
+	{margin-bottom: 15px;
+	}
+	
+	#section-footer h6 {   
+    margin-bottom: 15px;    
+}
+	
+	a.button {
+		padding: 5px 15px 5px 15px;
+		min-width: 100px;
+		font-size: 16px;
+	}
+	
+		section[data-name='projects'] ul { 
+    top: 0px;
+}
+	
+	
+	a.feedback-btn
+	{
+		right: 55px;
+	}
+	
+	a.emLogin-mobile {   
+    padding: 0px 8px 3px 8px;
+    color: #fff;
+    font-size: 13px;
+				
+}
+	
+	.jobpost table, .jobdes table
+	{
+		font-size: 12px;
+	}
+	
+	#home .modal-lg {
+   max-width: 95%;
+			margin: 0 auto;
+}
+	
+.modal-content
+	{
+				width: 95%;
+				margin: 0 auto;
+	}
+	
+.modal-body {
+    height: 85vh;				
+				overflow: auto;
+}
+	
+#modal1 img, #modal2 img
+	{
+		margin-bottom: 20px;
+	}
+	
+	
+	table.jobs {		
+		font-size: 13px;		
+	}
+	
+	.section-title h3 {
+    font-size: 20px; 
+}
+	
+	.ourmission h5 {  
+    font-size: 17px;
+}
+	
+	
+	.carousel-item {
+  height: 25vh;
+  min-height: 130px;
+}
+
+	
+	
+	
+	
+}
+ 
+
+
+
+/* ----------------- Footer bottom Links converts UL LI into HTML Dropdown --------------- */
+
+@media (max-width: 450px) {
+
+		.footer-links ul{
+    display: none;
+			}
+	
+			.select-menu {
+   display: block;
+}
+	
+	
+.Gitsform .button
+	{
+		min-width: 100px !important;
+		font-size:  14px;
+		margin-right: 0px;
+	}
+	
+		#section-footer .col-sm
+	{
+		margin-bottom: 30px;
+	}
+	
+	#section-footer .media p
+	{margin-bottom: 15px;
+	}
+	
+		#section-footer h6 {   
+    margin-bottom: 15px;    
+}
+	
+		a.button {
+		padding: 10px;
+		padding: 5px 15px 5px 15px;
+		font-size: 16px;
+		
+	}
+	
+		section[data-name='projects'] ul { 
+    top: 0px;
+}
+	
+	a.feedback-btn 
+	{
+		right: 45px;
+	}
+	
+		a.emLogin-mobile {   
+    padding: 0px 8px 3px 8px;
+    color: #fff;
+    font-size: 13px;
+				
+}
+		.jobpost table, .jobdes table
+	{
+		font-size: 12px;
+	}
+	
+
+}
+
+
+
+/* ----------------- Large Mobile :480px. --------------- */
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {	
+	
+		.carousel .slides h1 {    
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 10px;
+}
+	
+		.carousel .details h1 span
+{
+			 font-size: 20px;
+    margin-top: 20px;
+    line-height: 10px;
+}
+	
+		.carousel .slides h5 {    
+     font-size: 14px;
+					white-space: normal;
+}
+	
+	.carousel  a.getStarted {   
+    padding: 5px 10px 5px 10px;    
+    font-size: 14px;
+    width: 200px;
+    margin-top: 10px;
+}
+	
+	
+	.emLogin-mobile
+	{display: block !important;
+	}
+	
+	.emLogin
+	{display: none !important;
+	}
+	
+		
+.topheader
+	{ padding: 26px;
+	}
+	
+
+		.mtop {
+    position: relative;
+    top: 0px;
+}
+		#topbar
+	{margin-top:20px;	
+	}
+	
+		.topbarsmall
+	{
+		max-width: 100%;
+	}
+	
+	img.project-image
+	{display:none;
+	}
+	
+	section[data-name='projects'] ul {		
+		width: 100%;	
+		text-align: center;
+	}
+	
+	.section-title {   
+   margin-bottom: 15px;
+}
+	
+#section-careers img
+	{width: 50%;	
+	}
+	
+	#section-careers 
+	{text-align: center;
+	}	
+	
+	.remodal img
+	{
+		width: 100%;
+		overflow: hidden;
+	}
+	
+	.footer-links ul li a {
+    font-size: 12px !important;    
+    margin-right: 0px !important;
+}
+	
+	p.foot-copy
+	{
+		 font-size: 12px !important; 
+	}
+	
+		#section-footer p, #section-footer a
+{	
+	color: #fff;
+	font-size: 13px;
+}
+	
+	
+	.map a
+	{font-size: 12px;
+	}
+
+	.box-top {
+    height: 39px;
+    width: 43%;    
+    font-size: 13px;
+    line-height: 39px;   
+}
+	
+	
+	#page-inside .slider h3
+	{
+		font-size: 18px;
+	}
+	
+	
+	
+	
+	.Gitsform .button
+	{
+		min-width: 100px !important;
+		font-size:  14px;
+	}
+	
+		#section-footer .col-sm
+	{
+		margin-bottom: 30px;
+	}
+	
+	
+	#section-footer .media p
+	{margin-bottom: 15px;
+	}
+	
+		#section-footer h6 {   
+    margin-bottom: 15px;    
+}
+	
+	a.button {
+		padding: 10px;
+		padding: 5px 15px 5px 15px;
+		font-size: 16px;
+		
+	}
+	
+	.box-top {
+    height: 39px;
+    width: 43%;    
+    font-size: 13px;
+    line-height: 39px;   
+}
+	
+		section[data-name='projects'] ul { 
+    top: 0px;
+}
+	
+	a.feedback-btn 
+	{
+		right: 55px;
+	}
+	
+			a.emLogin-mobile {   
+    padding: 0px 8px 3px 8px;
+    color: #fff;
+    font-size: 13px;
+				
+}
+	
+		.jobpost table, .jobdes table
+	{
+		font-size: 12px;
+	}
+}
+
+
+@media (max-width: 767px) {	
+				.job-data
+				{
+				display:none;
+				}
+	
+			p.applyjob
+				{
+							text-align: center;
+				}
+}
+
+
+
+@media (max-width: 767px) and (orientation: portrait) {	
+		a.btn-view
+		{
+			min-width: 60px;
+			min-height: 60px;
+			padding: 5px;
+			text-align: center;
+			border-radius: 5px;
+			line-height: normal;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+}
+
+
+
+@media (min-width: 1280px) and (max-width: 1400px) {			
+	.slide1, .slide2, .slide3, .slide4 {
+		height: 68vh;		
+	}
+	
+}

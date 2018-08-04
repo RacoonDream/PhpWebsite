@@ -1,0 +1,115 @@
+/*************************
+    - Basic settings -
+*************************/
+.flex-carousel {
+	display:none;
+	position:relative;
+	-ms-touch-action:pan-y;
+}
+
+.flex-carousel .flex-wrapper-holder {
+	overflow:hidden;
+	position:relative;
+	width:100%;
+}
+
+.flex-carousel .flex-wrapper {
+	*zoom:1;
+	position:relative;
+	display:none;
+}
+
+.flex-carousel .flex-wrapper:before, .flex-carousel .flex-wrapper:after {
+	display:table;
+	content:"";
+	line-height:0;
+}
+
+.flex-carousel .flex-wrapper:after {
+	clear:both;
+}
+
+.flex-carousel .flex-item {
+	float:left;
+}
+
+.dragging, .dragging * {
+	cursor:url(https://mail.google.com/mail/images/2/closedhand.cur), move;
+}
+
+/******************
+    - Wrapper -
+******************/
+.flex-carousel  .flex-wrapper,
+.flex-carousel  .flex-item {
+	-webkit-transform-style:preserve-3d;
+	-webkit-backface-visibility:hidden;
+	-webkit-perspective:1000;
+  	-webkit-transform:translate3d(0,0,0);
+}
+
+/************************
+    - Default theme -
+************************/
+.flex-theme-default .flex-pagination {
+	text-align:center;
+	margin-top:10px;
+}
+
+.flex-theme-default .flex-page span {
+	display:block;
+	width:12px;
+	height:12px;
+	border-radius:50%;
+	background-color:#bbb;
+	margin:5px;
+	-webkit-transition:all 0.2s;
+	   -moz-transition:all 0.2s;
+			transition:all 0.2s;	
+}
+
+.flex-theme-default .flex-page {
+	display:inline-block;
+	cursor:pointer;
+	zoom:1;
+	*display:inline;
+}
+
+.flex-theme-default  .flex-page.active-page span {
+	background-color:#555555;
+}
+
+.flex-theme-default  .flex-page:hover span {
+	background-color:#888;
+}
+
+.flex-theme-default .flex-navigation {
+	text-align:center;
+}
+
+.flex-theme-default .flex-prev, .flex-theme-default .flex-next {
+	display:inline-block;
+	padding:4px 8px;
+	margin:5px;
+	background-color:#bbbbbb;
+	color:#ffffff;
+	border-radius:3px;
+	cursor:pointer;
+	font-size:13px;
+	-webkit-transition:all 0.2s;
+	   -moz-transition:all 0.2s;
+	 		transition:all 0.2s;	
+	-webkit-user-select:none;
+	   -moz-user-select:none;
+			user-select:none;
+}
+
+.flex-theme-default .flex-prev:hover, .flex-theme-default .flex-next:hover {
+	background-color:#555555;
+}
+
+.flex-theme-default .flex-disable, .flex-theme-default .flex-disable:hover {
+	background-color:#bbbbbb;
+	opacity:0.4;
+	cursor:default;
+}
